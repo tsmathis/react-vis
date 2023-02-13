@@ -12,12 +12,15 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const NavButton = ({ title, func, icon, color, dotColor }) => (
     <TooltipComponent content={title} position="BottomCenter">
-        <button type="button" onClick={func} style={{ color }}
+        <button
+            type="button"
+            onClick={func}
+            style={{ color }}
             className="relative text-xl rounded-full p-3 hover:bg-light-gray">
-            <span style={{ background: dotColor }}
-                className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2">
-                {icon}
-            </span>
+            <span
+                style={{ background: dotColor }}
+                className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2" />
+            {icon}
         </button>
     </TooltipComponent>
 )
@@ -27,8 +30,11 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleResize = () => setScreenSize(window.innerWidth);
+
         window.addEventListener("resize", handleResize);
+
         handleResize();
+
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
@@ -43,8 +49,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between p-2 md:mx-6 relative">
             <NavButton title="Menu" func={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color="blue" icon={<AiOutlineMenu />} />
-
-            <div className="flex">
+            <div className="flex ">
                 <NavButton title="Cart" func={() => handleClick("cart")} color="blue" icon={<FiShoppingCart />} />
                 <NavButton title="Chat" func={() => handleClick("chat")} color="blue" dotColor="#03C9D7" icon={<BsChatLeft />} />
                 <NavButton title="Notifications" func={() => handleClick("notification")} color="blue" dotColor="#03C9D7" icon={<RiNotification3Line />} />
