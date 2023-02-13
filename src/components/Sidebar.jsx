@@ -54,7 +54,7 @@ const Sidebar = () => {
                         tracking-tight
                         dark:text-white
                         text-slate-900">
-                        <SiShopware /> <span>Shopping</span>
+                        <SiShopware /> <span>React EShop</span>
                     </Link>
                     <TooltipComponent content="Menu" position="BottomCenter">
                         <button type="button"
