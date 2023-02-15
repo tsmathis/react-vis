@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import { Header } from '../components';
 
@@ -8,7 +8,7 @@ const Home = () => {
             <Header category="Dashboard" title="Org Overview" />
             <div>
                 <p className="text-lg text-slate-900 dark:text-white">
-                    Welcome to the React Landing. This applicaiton is a work in progress, but feel free to check out the Calendar and play around with the Settings!
+                    Welcome to the React Landing. This dashboard application is a work in progress, but feel free to check out the Calendar and play around with the Settings!
                 </p>
                 <p className="italic mt-10 text-gray-400 dark:text-white">
                     This application was built using React.js, Tailwind CSS, and UI components from the Syncfusion React Library.
