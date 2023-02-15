@@ -1,6 +1,6 @@
 # ReactVis
 
-ReactVis is my playground for toying around with building dashboard style applications using React. A live demo of the stable build can be found here -> [ReactVis-stable](tsmathis.github.io/react-vis/).
+ReactVis is my playground for toying around with building dashboard style applications using React. A live demo of the stable build can be found here -> [ReactVis-stable](https://tsmathis.github.io/react-vis/).
 
 Currently supports:
 - Multiple color themes
