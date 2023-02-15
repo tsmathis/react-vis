@@ -4,7 +4,6 @@ const StateContext = createContext();
 
 const initialState = {
     chat: false,
-    cart: false,
     userProfile: false,
     notification: false
 }
@@ -21,26 +20,28 @@ export const ContextProvider = ({ children }) => {
         setIsClicked({ ...initialState, [clicked]: true });
     }
 
+    const clickOff = (clicked) => {
+        setIsClicked({ ...initialState, [clicked]: false });
+    }
+
     const setColor = (color) => {
         setCurrentColor(color);
         localStorage.setItem("colorMode", color);
-        setThemeSettings(false);
+        // setThemeSettings(false);
     }
 
     const setMode = (e) => {
         setCurrentMode(e.target.value);
         localStorage.setItem("themeMode", e.target.value);
-        setThemeSettings(false);
+        // setThemeSettings(false);
     }
 
     return (
         <StateContext.Provider
             value={{
-                activeMenu,
-                setActiveMenu,
-                isClicked,
-                setIsClicked,
-                handleClick,
+                activeMenu, setActiveMenu,
+                isClicked, setIsClicked,
+                handleClick, clickOff,
                 screenSize, setScreenSize,
                 currentColor, setColor,
                 currentMode, setMode,
