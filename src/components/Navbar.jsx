@@ -49,8 +49,8 @@ const Navbar = () => {
         <div className="flex justify-between p-2 md:mx-6 relative">
             <NavButton title="Menu" func={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color={currentColor} icon={<AiOutlineMenu />} />
             <div className="flex ">
-                <NavButton title="Chat" func={() => handleClick("chat")} color={currentColor} /*dotColor="#03C9D7"*/ icon={<BsChatLeft />} />
-                <NavButton title="Notifications" func={() => handleClick("notification")} color={currentColor} /*dotColor="#03C9D7"*/ icon={<RiNotification3Line />} />
+                <NavButton title="Chat" func={() => handleClick("chat")} color={currentColor} dotColor="#03C9D7" icon={<BsChatLeft />} />
+                <NavButton title="Notifications" func={() => handleClick("notification")} color={currentColor} dotColor="#03C9D7" icon={<RiNotification3Line />} />
                 <TooltipComponent content="Profile" position="BottomCenter">
                     <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
                         onClick={() => handleClick("userProfile")}>

@@ -7,7 +7,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 
 const Chat = () => {
-    const { currentColor, clickOff, setActiveChat } = useStateContext();
+    const { currentColor, clickOff } = useStateContext();
 
     return (
         <div className="nav-item absolute right-5 md:right-52 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
