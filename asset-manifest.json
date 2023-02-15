@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-vis/static/css/main.bf3114fc.css",
-    "main.js": "/react-vis/static/js/main.d3e4477b.js",
+    "main.js": "/react-vis/static/js/main.237da1c6.js",
     "static/media/avatar3.png": "/react-vis/static/media/avatar3.013c6cf3e081328c4626.png",
     "static/media/avatar2.jpg": "/react-vis/static/media/avatar2.40d668f58c650e364281.jpg",
     "index.html": "/react-vis/index.html",
     "main.bf3114fc.css.map": "/react-vis/static/css/main.bf3114fc.css.map",
-    "main.d3e4477b.js.map": "/react-vis/static/js/main.d3e4477b.js.map"
+    "main.237da1c6.js.map": "/react-vis/static/js/main.237da1c6.js.map"
   },
   "entrypoints": [
     "static/css/main.bf3114fc.css",
-    "static/js/main.d3e4477b.js"
+    "static/js/main.237da1c6.js"
   ]
 }
