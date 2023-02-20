@@ -10,6 +10,6 @@ Currently supports:
 Future plans:
 - Database features for "organization" members (ex: employees, customers, etc)
 - Analytics applications utilizing the data visualization tools available from Syncfusion
-- A responsice Chat and Notification system
+- A responsive Chat and Notification system
 
 Built with React.js, Tailwind CSS, and Syncfusion
